@@ -28,6 +28,16 @@ module storage 'br/public:avm/res/storage/storage-account:0.26.2' = {
       defaultAction: 'Allow'
       bypass: 'AzureServices'
     }
+    blobServices: {
+      containters: [
+        {
+          name: 'training'
+        }
+        {
+          name: 'dataset'
+        }
+      ]
+    }
   }
   scope: rg
 }
